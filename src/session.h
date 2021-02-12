@@ -13,6 +13,6 @@ class Session final
     std::cout << "Creating session!\n";
   }
 
-  bool shunting_loop() const final;
+  bool shunting_loop() const;
 };
 #endif

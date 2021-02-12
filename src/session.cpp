@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-bool Session::shunting_loop() const final
+bool Session::shunting_loop() const
 {
   while (true)
     {
@@ -13,7 +13,7 @@ bool Session::shunting_loop() const final
       std::cout << "Your input: " << s << '\n';
 
       // call parse()
-      if (s.compare("quit"))
+      if (!s.compare("quit"))
 	{
 	  std::cout << "Bye bye!\n";
 	  return true;
