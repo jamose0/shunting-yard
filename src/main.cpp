@@ -1,7 +1,10 @@
+#include "session.h"
+
 #include <iostream>
 
 int main(int argc, char *argv[])
 {
-  std::cout << "Hello, world!\n";
+  Session session{};
+  session.shunting_loop();
   return 0;
 }
